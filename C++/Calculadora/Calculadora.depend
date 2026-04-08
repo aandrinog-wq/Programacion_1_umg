@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1774281857 source:c:\users\axel\desktop\programacion1\laboratorios\programacion_1_umg\c++\calculadora\main.cpp
+	<iostream>
+	"Calculadora.h"
+
+1774281312 c:\users\axel\desktop\programacion1\laboratorios\programacion_1_umg\c++\calculadora\include\calculadora.h
+
+1774281857 source:c:\users\axel\desktop\programacion1\laboratorios\programacion_1_umg\c++\calculadora\src\calculadora.cpp
+	"Calculadora.h"
+

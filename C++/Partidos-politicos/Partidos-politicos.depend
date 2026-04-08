@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1775535468 source:c:\users\axel\desktop\programacion1\laboratorios\programacion_1_umg\c++\partidos-politicos\main.cpp
+	"Partido.h"
+
+1775535467 c:\users\axel\desktop\programacion1\laboratorios\programacion_1_umg\c++\partidos-politicos\include\partido.h
+	<iostream>
+	<string>
+
+1775662977 source:c:\users\axel\desktop\programacion1\laboratorios\programacion_1_umg\c++\partidos-politicos\src\partido.cpp
+	"Partido.h"
+	<iostream>
+	<iomanip>
+	<string.h>
+	<stdlib.h>
+	<unistd.h>
+
