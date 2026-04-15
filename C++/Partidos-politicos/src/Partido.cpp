@@ -35,24 +35,24 @@ Partido::~Partido()
         total_votos_2=0;
         total_votos_3=0;
         llenarMatriz(matriz_votos_1);
-        total_votos_1 = imprimirMatriz(matriz_votos_1, partidos, "Eleccion Presidencial");
+        total_votos_1 = imprimirMatriz(matriz_votos_1, partidos, "Eleccion presidencial");
         llenarMatriz(matriz_votos_2);
         total_votos_2 = imprimirMatriz(matriz_votos_2, partidos, "Eleccion Diputados");
         llenarMatriz(matriz_votos_3);
-        total_votos_3 = imprimirMatriz(matriz_votos_3, partidos, "Eleccion Alcaldes");
+        total_votos_3 = imprimirMatriz(matriz_votos_3, partidos, "Eleccion Alcalde");
         if (total_votos_1 > total_votos_2 && total_votos_1 > total_votos_3)
         {
-            cout << "La eleccion con mas participacion fue la presidencial con: "
+            cout << "La eleccion con mas participacion fue presidencial: "
                  << total_votos_1 << endl;
         }
         else if (total_votos_2 > total_votos_1 && total_votos_2 > total_votos_3)
         {
-            cout << "La eleccion con mas participacion fue la de diputados con: "
+            cout << "La eleccion con mas participacion fue diputados: "
                  << total_votos_2 << endl;
         }
         else
         {
-            cout << "La eleccion con mas participacion fue la de alcaldes con:  "
+            cout << "La facultad con mejores notas fue la de Alcalde:  "
                  << total_votos_3 << endl;
         }
         cout << "Desea hacer otras elecciones? (s/n)? ";
@@ -116,12 +116,12 @@ Partido::~Partido()
     memcpy(alumnoPromedioMayor, partidos[0], MAXIMA_LONGITUD_CADENA);
     memcpy(alumnoPromedioMenor, partidos[0], MAXIMA_LONGITUD_CADENA);
     cout << nombreEleccion << endl;
-    cout << "(R1)=>Region 1 (R2)=>Region 2 (R3)=>Region 3 (R4)=>Region 4 (R5)=>Region 5" << endl;
+
     imprimirMatrizLinea();
-    cout << setw(9) << "Partido";
+    cout << setw(9) << "Partidos";
     for (x = 0; x < NUMERO_REGIONES; x++)
     {
-        cout << setw(9) << " R" << x + 1;
+        cout << setw(9) << "R" << x + 1;
     }
     cout << setw(8) << " Total" << endl;
     imprimirMatrizLinea();
@@ -150,8 +150,8 @@ Partido::~Partido()
         imprimirMatrizLinea();
     }
     promedioGeneral = totalGeneral / NUMERO_PARTIDOS;
-    cout << "Partido con mas votos: " << setw(10) << alumnoPromedioMayor <<  setw(10) << promedioMayor << endl;
-    cout << "Partido con menos votos: " << setw(10) << alumnoPromedioMenor <<  setw(10) << promedioMenor << endl;
+    cout << "Partido con mayor votos: " << setw(10) << alumnoPromedioMayor <<  setw(10) << promedioMayor << endl;
+    cout << "Partido con menor votos " << setw(10) << alumnoPromedioMenor <<  setw(10) << promedioMenor << endl;
     return promedioGeneral;
  }
 
